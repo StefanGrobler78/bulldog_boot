@@ -1,0 +1,213 @@
+:root {
+  --primary-color: black;
+  --bs-body-font-family: 'Montserrat', sans-serif;
+  --bs-btn-bg: rgba(255, 105, 180, 0,5);
+  --max-width: 1280px;
+
+  --accent-color: 255, 69, 0;
+  /* --accent-color: 1, 165, 255; */
+  --dark-color: 41, 11, 0;
+  --light-color: 245, 245, 245;
+}
+
+
+/* font-family: 'Montserrat', sans-serif; */
+
+
+body{
+  max-width: 1920px;
+  /* color: rgb(1, 165, 255); */
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 70px;
+}
+
+section::before {
+  display: block;
+  content: "";
+  height: 70px;
+}
+
+section::after {
+  display: block;
+  content: "";
+  height: 70px;
+}
+
+footer::before {
+  display: block;
+  content: "";
+  height: 70px;
+}
+
+.container {
+  max-width: var(--max-width);
+} 
+
+/* Navigation */
+.logo-container h4{
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: rgba(var(--light-color), 1);
+  color: rgba(var(--light-dark), 1);
+  text-align: left;
+}
+
+/* Hero Section */
+.hero {
+  min-height: calc(100vh - 140px);
+  background-image: url('../assets/pictures/hero_bg.jpg');
+  /* background-image: url('../assets/pictures/watercolor_bg_1.jpg'); */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  padding: 0 1rem;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  /* background-color: rgba(var(--accent-color), 0.2); */
+  min-height: 80vh;
+  padding-bottom: 8rem;
+  gap: 1rem;
+}
+.hero-heading {
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 900;
+  /* font-family: 'Puppies Play', cursive; */
+  /* font-family: 'Style Script', cursive; */
+  /* font-family: 'Whisper', cursive; */
+  line-height: .9;
+}
+.hero-subheading {
+  max-width: 40ch;
+}
+
+.hero-btn_container{
+background-color: transparent;
+}
+
+.hero-btn {
+  background-color: rgba(var(--accent-color));
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  color: rgba(var(--light-color), 1);
+  padding: 0.75rem 1.50rem;
+  border-radius: .3rem;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+  background-color: rgba(var(--accent-color), 0.8);
+  color: inherit;
+}
+
+/* Fact Section */
+.interesting-fact_section {
+  background-color: rgba(var(--accent-color));
+}
+
+.interesting-fact_container {
+  text-align: center;
+  max-width: 60ch;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+
+/* Carousel */
+
+.carousel-container {
+  margin-bottom: 70px;
+}
+
+.content-text {
+  background-color: rgba(var(--accent-color));
+  color: rgba(var(--light-color), 1);
+  padding: 1rem;
+}
+
+
+
+.about-img {
+  width: 100%;
+}
+/* Section Heading */
+.section-heading h2 {
+  font-weight: 900;
+  font-size: clamp(3rem, 4vw, 5rem);
+  position: relative;
+  line-height: normal;
+  /* font-family: 'Puppies Play', cursive; */
+  /* font-family: 'Style Script', cursive; */
+  /* font-family: 'Whisper', cursive; */
+}
+
+/* .section-heading::after {
+  content: url('../assets/pictures/dogs-paw.png') ;
+  position: absolute;
+  left: 0px;
+  bottom: -2.2rem;
+  color: rgba(var(--bgc-accent));
+  width: 20px;
+  height: 20px;
+} */
+
+/* section subheading */
+.section-subheading h3 {
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3rem);
+  
+  /* font-family: 'Whisper', cursive; */
+  margin-bottom: 2rem;
+}
+
+
+footer {
+  background-color: rgba(var(--accent-color));
+  color: rgba(var(--light-color), 1);
+}
+
+.common-btn{
+  background-color: rgba(var(--accent-color));
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 0.5rem 1.20rem;
+  border-radius: .3rem;
+}
+
+.common-btn:hover,
+.common-btn:active {
+  background-color: rgba(var(--accent-color), 0.8);
+  color: whitesmoke;
+}
+
+.error {
+  font-style: italic;
+  color: lightseagreen;
+}
+
