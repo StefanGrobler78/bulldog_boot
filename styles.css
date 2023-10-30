@@ -88,7 +88,7 @@ nav {
 }
 .navbar-brand {
   font-family: var(--ff-accent);
-  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .navbar-nav {
@@ -116,9 +116,9 @@ nav {
   outline: var(--bs-navbar-toggler-border-color);
 }
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
   width: 20px;
-}
+} */
 
 /* Hero Section */
 .hero {
@@ -239,12 +239,6 @@ background-color: transparent;
   margin: 0 auto;
   font-style: italic;
 }
-.fact-text {
-  font-size: 1.5rem;
-  font-weight: 800;
-  /* text-shadow: 1px 1px 1px black; */
-}
-
 
 /* About */
 .about-img_container {
@@ -351,20 +345,19 @@ background-color: transparent;
   border: none;
 }
 
+/* facts */
+
+.fact-text {
+  font-size: 2rem;
+  font-weight: 800;
+  /* text-shadow: 1px 1px 1px black; */
+}
 
 
 /* FOOTER */
 footer {
   background-color: var(--accent-color3);
-  color: var(--secondary-color);
-}
-
-.quick-nav a {
-  color: #ffffff;
-}
-
-.quick-nav a:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--primary-color);
 }
 .footer-fb {
   width: 50px;
